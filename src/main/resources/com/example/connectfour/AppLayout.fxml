@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #baf2ef;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.connectfour.MyController">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints maxWidth="300.0" minWidth="250.0" prefWidth="250.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #D3D3D3;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="playerOneTextField" promptText="Player One Name" />
+            <TextField fx:id="playerTwoTextField" promptText="Player Two Name" />
+            <Button fx:id="setNamesBtn" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="27.0" prefWidth="211.0" text="Set Names" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="40.0" prefWidth="313.0" text="PlayerName" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="turnLabel" alignment="CENTER" prefHeight="43.0" prefWidth="305.0" text="Turn" textFill="#fffafa">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
